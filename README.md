@@ -3,7 +3,8 @@ tags: readme
 language: ruby
 resources: 0
 track: web development
-unit: ruby
+topic: ruby
+unit: string manipulation
 lesson: interpolation
 ---
 
