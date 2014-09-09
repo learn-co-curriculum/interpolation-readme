@@ -1,3 +1,12 @@
+---
+tags: readme
+language: ruby
+resources: 0
+track: web development
+unit: ruby
+lesson: interpolation
+---
+
 # String Interpolation
 
 ## Introduction
