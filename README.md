@@ -1,47 +1,41 @@
-# Global Substitution and String Interpolation
+# String Interpolation
 
-### .gsub
+## Introduction
 
-The `.gsub` method is a handy ruby tool that allows you to `globally substitute` one or more words, or letter for another. Let's take a look at how that works.
-
-We have a fact about a bug assigned to a variable `wrong_fact`:
+You're a party planner for Beyonce's 34th birthday and you're using Ruby to help you out with the arrangments. There is a variable called `num_of_attendees` and since she's very popular, this variable points to the integer 547. You try and print the value of `num_of_attendees` to the screen with the code below:
 
 ```ruby
-wrong_fact = "Ladybugs can taste with their feet."
+puts "There are num_of_attendees people coming to Beyonce's birthday party"
 ```
 
-But wait, that's not a fact about ladybugs, but butterflies! Let's swap out the word "Ladybugs" for "Butterflies" using .gsub. The method `.gsub` takes two `parameters`, the first one the word you want to replace, and the second one is the word you want to replace it with:
+You expect this to print "There are 237 coming to Beyonce's birthday party" but instead it prints "There are num_of_attendees people coming to Beyonce's birthday party". Why is this?
+
+Well, that's because variables need to be interpolated to get their value, and not just their name, to print to the screen. To interporate, you wrap the variable like #{this}. You try again:
 
 ```ruby
-right_fact = wrong_fact.gsub("Ladybugs", "Butterflies")
+puts "There are #{num_of_attendees} people coming to Beyonce's birthday party"
 ```
 
-The `return value` (aka, what this action produces when it's called) will be "Butterflies can taste with their feet." Then, if we type `right_fact` into our console, we'll see the fact correctly printed.
+This prints "There are 547 people coming to Beyonce's birthday party". Yay!
 
-### Chaining .gsubs
-
-What if you have a sentence that you want to substitute more than one word in? We can do that by calling `.gsub` more than once on the same line, through a process called `method chaining`. Take a look:
-
-```ruby
-wrong_fact = "Cats fail to recover about 50 percent of the nuts they bury."
-true_fact = wrong_fact.gsub("Cats", "Squirrels").gsub("50", "74")
-
-```
-
-### String Interpolation
-
-`.gsub` is great, but there's another super flexible way to do this (you'll see why in our exercise later). We do this by knowing the word we want to interpolate in our sentence already. We wrap that word like #{this}.
+## Example 2
 
 Let's say have this question on your biology test:
 
-"A group of flamingos is called a #{answer}."
+```text
+puts "A group of flamingos is called a #{answer}"
+```
 
-Then you make `answer` a variable, and assign it to the answer:
+You make `answer` a variable, and assign it to the word "flamboyance", above the interpolation:
 
-`answer = "Flamboyance"`
+```text
+answer = "flamboyance"
+puts "A group of flamingos is called a #{answer}"
+```
 
+This prints "A group of flamingos is called a flamboyance" to the screen.
 
-Note that here we're declaring the variable `answer` before we call `puts`. We need to do it in this order, because our program is read by the computer sequentially. When our computer gets to `#{answer}`, it won't know what that is if answer isn't known yet.
+Note that here you're declaring the variable `answer` before calling `puts`. You need to do it in this order, because our program is read by the computer sequentially. When your computer gets to `#{answer}`, it won't know what that is if answer isn't known yet.
 
 Some Rubyists write this another way, like this:
 
@@ -50,4 +44,4 @@ answer = "Flamboyance"
 puts "A group of flamingos is called a " + answer
 ```
 
-But personally, we think the first way looks nicer and is easier for your fellow programmers to read.
+There's debate about the best practice but most people at Flatiron think the first way looks nicer and is easier for your fellow programmers to read.
