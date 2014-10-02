@@ -18,7 +18,7 @@ You're a party planner for Beyonce's 34th birthday and you're using Ruby to help
 puts "There are num_of_attendees people coming to Beyonce's birthday party"
 ```
 
-You expect this to print "There are 237 coming to Beyonce's birthday party" but instead it prints "There are num_of_attendees people coming to Beyonce's birthday party". Why is this?
+You expect this to print "There are 547 coming to Beyonce's birthday party" but instead it prints "There are num_of_attendees people coming to Beyonce's birthday party". Why is this?
 
 Well, that's because variables need to be interpolated to get their value, and not just their name, to print to the screen. To interporate, you wrap the variable like #{this}. You try again:
 
