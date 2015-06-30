@@ -1,5 +1,9 @@
 tags:
   - readme
+  - string manipulation 
+  - interpolation 
 languages:
   - ruby
 resources: 0
+
+
