@@ -1,13 +1,3 @@
----
-tags: readme
-language: ruby
-resources: 0
-track: web development
-topic: ruby
-unit: string manipulation
-lesson: interpolation
----
-
 # String Interpolation
 
 ## Introduction
@@ -20,7 +10,9 @@ puts "There are num_of_attendees people coming to Beyonce's birthday party"
 
 You expect this to print "There are 547 coming to Beyonce's birthday party" but instead it prints "There are num_of_attendees people coming to Beyonce's birthday party". Why is this?
 
-Well, that's because variables need to be interpolated to get their value, and not just their name, to print to the screen. To interporate, you wrap the variable like #{this}. You try again:
+Well, that's because variables need to be **interpolated** inside a string to get their value, and not just referenced by their name, to print to the screen. To interporate, you wrap the variable like #{this}. 
+
+Let's try again:
 
 ```ruby
 puts "There are #{num_of_attendees} people coming to Beyonce's birthday party"
@@ -30,15 +22,20 @@ This prints "There are 547 people coming to Beyonce's birthday party". Yay!
 
 ## Example 2
 
-Let's say have this question on your biology test:
+Let's drop into IRB and copy and paste the code from the following example. 
 
-```text
+Let's say have a super hard question on your biology test, asking you to identify the technical term for a group of flamingos. 
+
+
+
+```ruby
+answer = "< fill in your answer here >"
 puts "A group of flamingos is called a #{answer}"
 ```
 
-You make `answer` a variable, and assign it to the word "flamboyance", above the interpolation:
+Now, set the `answer` variable equal to "flamboyance" and run the following code in IRB: 
 
-```text
+```ruby
 answer = "flamboyance"
 puts "A group of flamingos is called a #{answer}"
 ```
