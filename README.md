@@ -57,7 +57,7 @@ This prints `A group of flamingos is called a flamboyance.` to the screen.
 
 Note that here you're declaring the variable `answer` before calling `puts`. You need to do it in this order, because our program is read by the computer sequentially. When your computer gets to `#{answer}`, it won't know what that is if `answer` isn't defined yet.
 
-# Another Way to Interpolate Strings
+## Another Way to Interpolate Variables into Strings
 
 Some Rubyists write this another way, like this:
 
