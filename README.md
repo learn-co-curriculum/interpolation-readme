@@ -11,7 +11,7 @@ We'll cover when and how to use string interpolation.
 
 ## When to Use String Interpolation 
 
-You're a party planner for Beyonce's 34th birthday and you're using Ruby to help you out with the arrangements. There is a variable called `num_of_attendees` and since she's very popular, this variable points to the integer 547. You try and print the value of `num_of_attendees` to the screen with the code below:
+You're a party planner for Beyonce's 35th birthday and you're using Ruby to help you out with the arrangements. There is a variable called `num_of_attendees` and since she's very popular, this variable points to the integer 547. You try and print the value of `num_of_attendees` to the screen with the code below:
 
 ```ruby
 puts "There are num_of_attendees people coming to Beyonce's birthday party."
