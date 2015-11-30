@@ -23,7 +23,7 @@ Well, that's because variables need to be **interpolated** inside a string to ge
 
 ## How You Interpolate Variables into Strings
 
-To interporate, you wrap the variable like `#{this}`. 
+To interpolate, you wrap the variable like `#{this}`. 
 
 Let's try again:
 
