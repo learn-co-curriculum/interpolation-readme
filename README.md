@@ -67,3 +67,5 @@ puts "A group of flamingos is called a " + answer + "."
 ```
 
 There's debate about the best practice but most people at Learn think the first way looks nicer and is easier for your fellow programmers to read.
+
+<a href='https://learn.co/lessons/interpolation-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
