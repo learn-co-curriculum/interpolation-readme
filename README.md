@@ -21,6 +21,7 @@ You expect this to print "There are 547 people coming to Beyonce's birthday part
 
 Well, that's because variables need to be **interpolated** inside a string to get their value, and not just referenced by their name, to print to the screen. 
 
+
 ## How You Interpolate Variables into Strings
 
 To interpolate, you wrap the variable like `#{this}`. 
@@ -32,6 +33,7 @@ puts "There are #{num_of_attendees} people coming to Beyonce's birthday party."
 ```
 
 This prints `There are 547 people coming to Beyonce's birthday party.`. Yay!
+
 
 ## Additional Practice
 
@@ -67,5 +69,19 @@ puts "A group of flamingos is called a " + answer + "."
 ```
 
 There's debate about the best practice but most people at Learn think the first way looks nicer and is easier for your fellow programmers to read.
+
+#### Note: ####
+
+Interpolation will only work on Strings wrapped in double quotes `""`. Single quotes: `''` **do not support string interpolation**, so running:
+
+```ruby
+answer = 'Flamboyance'
+puts 'A group of flamingos is called a #{answer}.'
+```
+
+Will just print `A group of flamingos is called a #{answer}.`
+
+If you were commited to using single quotes in such a case, it would be the right time to use the alternative method (`'A group of flamingos is called a ' + answer + '.'`) which would work just fine.
+
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/interpolation-readme' title='String Interpolation'>String Interpolation</a> on Learn.co and start learning to code for free.</p>
