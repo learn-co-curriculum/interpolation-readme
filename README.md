@@ -68,7 +68,7 @@ answer = "Flamboyance"
 puts "A group of flamingos is called a " + answer + "."
 ```
 
-There's debate about the best practice but most people at Learn think the first way looks nicer and is easier for your fellow programmers to read.
+There's debate about the best practice but most people here think the first way looks nicer and is easier for your fellow programmers to read.
 
 #### Note: ####
 
