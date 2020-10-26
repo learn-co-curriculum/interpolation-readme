@@ -82,8 +82,3 @@ puts 'A group of flamingos is called a #{answer}.'
 Will just print `A group of flamingos is called a #{answer}.`
 
 If you were committed to using single quotes in such a case, it would be the right time to use the alternative method (`'A group of flamingos is called a ' + answer + '.'`) which would work just fine.
-
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/interpolation-readme' title='String Interpolation'>String Interpolation</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/interpolation-readme'>String Interpolation </a> on Learn.co and start learning to code for free.</p>
