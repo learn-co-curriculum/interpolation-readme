@@ -37,7 +37,13 @@ This prints `There are 547 people coming to Beyonce's birthday party.`. Yay!
 
 ## Additional Practice
 
-Let's drop into IRB and copy and paste the code from the following example. 
+Let's drop into IRB and copy and paste the code from the following example. First, open IRB by running this in your terminal:
+
+```sh
+irb
+```
+
+Now we can try out some Ruby code.
 
 Let's say you have a super hard question on your biology test asking you to identify the technical term for a group of flamingos. 
 
